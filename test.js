@@ -6,7 +6,9 @@ test('is array', function(t){
   t.notOk(isArray({}));
   t.notOk(isArray(null));
   t.notOk(isArray(false));
-
+  t.notOk(isArray(1));
+  t.notOk(isArray('1'));
+  
   var obj = {};
   obj[0] = true;
   t.notOk(isArray(obj));
